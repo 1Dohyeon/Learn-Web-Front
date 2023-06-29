@@ -1,0 +1,47 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #CDC6C3;
+}
+
+.layout1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.layout1 h1{
+    font-size: 50px;
+}
+.layout1 a{
+    font-size: 25px;
+}
+
+.layout2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 580px) {
+    /* 580px 이하일 때 적용할 스타일 */
+    .layout1{
+        height: 10vh;
+    }
+    .layout1 h1{
+        font-size: 30px;
+    }
+    .layout1 a{
+        font-size: 15px;
+    }
+    
+    .layout2{
+        height: 90vh;
+    }
+}
