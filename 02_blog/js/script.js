@@ -5,10 +5,10 @@ window.addEventListener('scroll', function() {
     var projectsBox = document.getElementById('Projects_box');
     var blogBox = document.getElementById('Blog_box');
     var boxes = [AboutMeBox, resumeBox, studyingBox, projectsBox, blogBox];
-    var headerLiElements = document.getElementsByClassName('header_li');
 
+    var headerLiElements = document.getElementsByClassName('header_li');
     var windowHeight = window.innerHeight;
-    var threshold = windowHeight * 0.5;
+    var threshold = windowHeight * 0.5;     // header_li
 
     for (var i = 0; i < boxes.length; i++) {
         var box = boxes[i];
