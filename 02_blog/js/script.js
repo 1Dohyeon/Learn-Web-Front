@@ -28,7 +28,7 @@ window.addEventListener('scroll', function() {
 // 헤더 요소 클릭 이벤트 처리
 function scrollToBox(boxId) {
     var boxElement = document.getElementById(boxId);
-    var boxTop = boxElement.offsetTop;
+    var boxTop = boxElement.offsetTop - 200;
 
     window.scrollTo({
         top: boxTop,
