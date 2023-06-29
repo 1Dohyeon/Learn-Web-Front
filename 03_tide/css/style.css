@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #fff;
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+.background_img{
+    width: 360px;
+    height: 740px;
+    background-image: url('../images/sea_sunset_horizon_131804_480x800.jpg');
+}
+.background{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30,30,30,0.8);;
+}
+.title_box{
+    width: 100%;
+    height: 120px;
+}
+.title{
+    position: absolute;
+    width: 240px;
+    height: 60px;
+    margin-left: 60px;
+    margin-top: 30px;
+    background-color: rgba(30,30,30,0.6);
+    border-radius: 10px;
+    text-align: center;
+}
+.title h1{
+    margin-top: 8px;
+}
+.sys{
+    display: flex;
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    background-color: rgba(30,30,30,0.6);
+    margin-left: 30px;
+    justify-content: space-between;
+}
+.select, .date{
+    padding: 0px 35px;
+}
+#place{
+    background-color: transparent;
+    color: #fff;
+    width: 70px;
+    height: 33px;
+    margin-top: 13px;
+    border: none;
+}
+#place option{
+    color: #000;
+}
+#start-date{
+    background-color: transparent;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    margin-top: 13px;
+    border: none;
+}
+.btn{
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    margin-top: 90px;
+    background-color: rgba(30,30,30,0.6);
+    align-items: center;
+    margin-left: 30px;
+}
+.input_btn{
+    background-color: transparent;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.importmation{
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    margin-top: 180px;
+    margin-left: 30px;
+    background-color: rgba(30,30,30,0.8);
+}
+.city_box{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+.city_box h1{
+    font-size: 24px;
+    margin-top: 10px;
+}
+.t_box{
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    height: 250px;
+    justify-content: space-between;
+}
+.t_box h3{
+    padding: 10px 0px;
+}
+    
