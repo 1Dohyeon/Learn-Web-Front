@@ -21,7 +21,7 @@ body{
 }
 #layout{
     width: 1200px;
-    height: 100vh;
+    height: 100%;
 }
 #header{
     width: 1200px;
@@ -91,11 +91,11 @@ body{
 }
 .Resume_sub_title{
     font-size: 40px;
+    margin-top: 10px;
 }
 .Resume_content{
     width: 100%;
-    height: 500px;
-    background-color: #5D9D0B;
+    height: 100%;
     margin-bottom: 100px;
 }
 
@@ -123,7 +123,7 @@ body{
         height: 50px;
     }
     .title{
-        font-size: 25px;
+        font-size: 35px;
     }
     #wrap{
         padding-top: 0px;
@@ -153,6 +153,13 @@ body{
         font-size: 18px;
     }
 
+
+    .Resume_sub_title{
+        font-size: 25px;
+    }
+    .Resume_content h2{
+        font-size: 18px;
+    }
 }
 
 
