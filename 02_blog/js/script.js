@@ -28,7 +28,12 @@ window.addEventListener('scroll', function() {
 // 헤더 요소 클릭 이벤트 처리
 function scrollToBox(boxId) {
     var boxElement = document.getElementById(boxId);
-    var boxTop = boxElement.offsetTop - 200;
+    var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    if (width>650){
+        var boxTop = boxElement.offsetTop - 200;
+    } else{
+        var boxTop = boxElement.offsetTop - 100;
+    }
 
     window.scrollTo({
         top: boxTop,
