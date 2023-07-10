@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dohyeon Won</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightMode.css">
     <script  src="js/script.js"></script>
 </head>
 </head>
@@ -15,7 +16,7 @@
             <li id="Resume_li"      class="header_li" onclick="ClickToBox('Resume_box')">    <h3>Resume</h3></li>
             <li id="Studying_li"    class="header_li" onclick="ClickToBox('Studying_box')">  <h3>Studying</h3></li>
             <li id="Projects_li"    class="header_li" onclick="ClickToBox('Projects_box')">  <h3>Projects</h3></li>
-            <li id="Blog_li"        class="header_li" onclick="ClickToBox('Blog_box')">      <h3>Blog</h3></li>
+            <li id="Theme_li"        class="header_li" onclick="toggleTheme()">      <h3>Theme</h3></li>
         </ul>
         <div id="wrap">
             <div id="AboutMe_box"   class="box">
@@ -51,14 +52,18 @@
                 <h1 class="Resume_sub_title">Introduce</h1>
                 <div class="Resume_content">
                     <br>
-                    <h3>안녕하세요.</h3>
-                    <h3>백엔드 개발자가 되기위해 공부 중인 대학생 원도현입니다.</h3>
-                    <h3>공부와 일을 숙제라고 생각하지 않고 즐길 줄 알며, 
-                        공부를 통해 배운 지식들을 남들과 공유하는 것을 좋아합니다.</h3>
-                    <h3>코딩 공부뿐만 아니라, 
-                        내 코드가 비즈니스 면에서 어떠한 영향을 끼칠까 항상 생각하며,
-                        비즈니스적 문제에도 관심이 많습니다.
-                    </h3>
+                    <h3>&nbsp;
+                        코드를 이용하여 아이디어와 여러 문제들을 논리적으로 구현하고 실행해보는 과정에서 
+                        문제 해결의 재미와 창의성을 경험하게 되었고, 
+                        개발자라는 직업이 매력적으로 다가왔습니다.
+                        <br><br>&nbsp;
+                        자기개발과 배우는 것을 좋아하며, 소통과 새로운 도전에 열린 마음을 가지고 있습니다. 
+                        이러한 특성을 수시로 변하는 환경 속에서 장점으로 적용할 수 있는 개발자가 되고싶습니다. 
+                        공부와 일을 숙제라고 생각하지 않고 즐길 줄 알며, 
+                        공부를 통해 배운 지식들을 남들과 공유하는 것을 좋아합니다. 
+                        또한 비즈니스적 문제에도 관심이 많으며,
+                        직접 작성한 코드가 비즈니스 면에서 어떠한 영향을 미치는지 비즈니스적 관점에서 
+                        문제를 바라볼 수 있는 개발자가 되겠습니다.</h3>
                 </div>
                 <h1 class="Resume_sub_title">Experience</h1>
                 <div class="Resume_content">
@@ -79,10 +84,6 @@
                 <h1 class="title">Projects</h1>
                 <div class="tempContent"></div>
                 <div class="borderBox"></div>
-            </div>
-            <div id="Blog_box"      class="box">
-                <h1 class="title">Blog</h1>
-                <div class="tempContent"></div>
             </div>
         </div>
     </div>

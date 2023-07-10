@@ -1,0 +1,61 @@
+.light-mode {
+    background-color: #e2e2e2;
+    color: #1B1D24;
+}
+
+.light-mode #layout{
+    background-color: #F4FEFD;
+}
+
+.light-mode a, .light-mode h1, .light-mode h2, .light-mode h3, .light-mode h4, .light-mode h5, .light-mode h6{
+    color: #1B1D24;
+}
+
+.light-mode #header {
+    background-color: #F4FEFD;
+    border-bottom: 1px solid #1B1D24;
+}
+
+.light-mode #header_li h3{
+    color: #1B1D24;
+} 
+
+.light-mode .header_li:hover {
+    border-bottom-color: #1B1D24;
+}
+
+.light-mode .header_li:hover h3 {
+    color: #1B1D24;
+}
+
+.light-mode .header_li.active {
+    border-bottom-color: #1B1D24;
+}
+
+.light-mode .header_li.active h3 {
+    color: #1B1D24;
+}
+
+.light-mode .borderBox{
+    box-shadow: 0px 1.5px 1px -1px #1B1D24;
+}
+
+.light-mode #AboutMe_box {
+    background-color: #F4FEFD;
+}
+
+.light-mode #intro_img{
+    background-color: #e2e2e2;
+}
+
+.light-mode #Resume_box {
+    background-color: #F4FEFD;
+}
+
+.light-mode #Studying_box {
+    background-color: #F4FEFD;
+}
+
+.light-mode #Projects_box {
+    background-color: #F4FEFD;
+}

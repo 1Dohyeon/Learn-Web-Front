@@ -125,13 +125,16 @@ body{
     height: 100%;
 }
 .Resume_sub_title{
+    width: 90%;
+    margin-left: 5%;
     font-size: 28px;
     margin-top: 10px;
 }
 .Resume_content{
-    width: 100%;
+    width: 90%;
     height: 100%;
     margin-bottom: 100px;
+    margin-left: 5%;
 }
 
 @media (max-width: 1000px) {

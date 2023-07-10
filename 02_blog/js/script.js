@@ -39,8 +39,18 @@ function ClickToBox(boxId) {
 }
 
 
+function toggleTheme() {
+  var body = document.body;
+  var header = document.getElementById("header");
 
-
+  if (body.classList.contains("light-mode")) {
+      body.classList.remove("light-mode");
+      header.classList.remove("light-mode"); // 헤더에도 어두운 모드 클래스 제거
+  } else {
+      body.classList.add("light-mode");
+      header.classList.add("light-mode"); // 헤더에도 어두운 모드 클래스 추가
+  }
+}
 
 
 
