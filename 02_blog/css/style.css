@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap');
 a, h1, h2, h3, h4, h5 ,h6{
     color: #F4FEFD;
     padding: 0;
     margin: 0;
-    font-family: 'Nunito', 'Noto Sans KR', Arial, sans-serif;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 16px;
 }
 ul, li{
     margin: 0;
@@ -20,12 +32,13 @@ body{
     justify-content: center;
 }
 #layout{
-    width: 1200px;
+    width: 1000px;
     height: 100%;
 }
 #header{
-    width: 1200px;
-    height: 100px;
+    z-index: 999;
+    width: 1000px;
+    height: 80px;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -36,61 +49,81 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(1200px / 5);
-    border-bottom: solid 1px #F4FEFD;  /*#F4FEFD*/
+    width: 200px;
 }
 .header_li:hover{
     cursor: pointer;
     border-bottom: 1px solid #5D9D0B;
 }
-.header_li:hover h1 {
+.header_li:hover h3 {
+    color: #5D9D0B;
+}
+.header_li.active {
+    border-bottom-color: #5D9D0B;
+  }
+  
+.header_li.active h3 {
     color: #5D9D0B;
 }
 
 .box{
     width: 100%;
-    height: 1400px;
-    border-bottom: 1px solid #F4FEFD;
 }
+.tempContent{
+    width: 100%;
+    height: 600px;
+}
+.borderBox{
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 1.5px 1px -1px #F4FEFD;
+    margin-left: 50%;
+    transform: translateX(-50%)
+}
+#wrap{
+    padding-top: 80px;
+}
+.title{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 100px;
+}
+/* 아래서부터 about me */
 #AboutMe_box{
     height: 100%;
 }
 
-#wrap{
-    padding-top: 100px;
-}
-.title{
-    font-size: 60px;
-    text-align: center;
-    margin-top: 200px;
-}
-/* 아래서부터 about me */
 #intro_container{
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    margin-top: 30px;
-    margin-bottom: 200px;
+    margin-top: 20px;
+}
+#img_box{
+    display: flex;
+    justify-content: right;
+    width: 50%;
 }
 #intro_img{
-    width: 350px;
-    margin-left: 50px;
-    height: 350px;
+    right: 50px;
+    width: 250px;
+    margin-right: 50px;
+    height: 250px;
     background-color: #f4fefd5c;
     border-radius: 5%;
 }
 #intro_txt{
-    width: 55%;
-    height: 100%;
-    
+    width: 50%;
+    height: 100%;   
 }
+
 /* 아래서부터 Resume */
 #Resume_box{
     height: 100%;
 }
 .Resume_sub_title{
-    font-size: 40px;
+    font-size: 28px;
     margin-top: 10px;
 }
 .Resume_content{
@@ -99,34 +132,34 @@ body{
     margin-bottom: 100px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
+    #layout{
+        width: 768px;
+    }
     #header{
-        width: 100vw;
+        width: 768px;
     }
     .header_li{
-        width: calc(100vw / 5);
-        font-size: 1vw
+        width: calc(768px / 5);
     }
 }
-@media (max-width: 950px) {
+@media (max-width: 768px) {
     #header{
+        width: 100%;
         height: 50px;
     }
-    #intro_img{
-        width: 200px;
-        height: 200px;
-    }
-    
-}
-@media (max-width: 650px) {
-    #header{
-        height: 50px;
+    .header_li h3{
+        font-size: 11px;
     }
     .title{
-        font-size: 35px;
+        font-size: 20px;
     }
     #wrap{
         padding-top: 0px;
+    }
+    .borderBox{
+        width: 85%;
+        height: 20px;
     }
     #intro_container{
         display: block;
@@ -135,30 +168,28 @@ body{
         margin-top: 15px;
         margin-bottom: 50px;
     }
+    #img_box{
+        width: 100%;
+    }
     #intro_img{
-        margin: 0;
-        margin: auto;
         width: 200px;
         height: 200px;
-        margin-bottom: 20px;
+        margin: auto;
     }
     #intro_txt{
+        margin-top: 20px;
         text-align: center;
         width: 100%;
     }
-    #intro_txt h1{
-        font-size: 22px;
-    }
     #intro_txt h2{
-        font-size: 18px;
+        font-size: 16px;
     }
-
-
+    #intro_txt h3{
+        font-size: 11px;
+    }
     .Resume_sub_title{
-        font-size: 25px;
-    }
-    .Resume_content h2{
-        font-size: 18px;
+        margin-left: 20px;
+        font-size: 16px;
     }
 }
 
