@@ -1,15 +1,14 @@
-import React from 'react';
-import {useState} from 'react'; // "useState" manage value that could be changed in the componant.
 import axios from "axios";
+import React, { useState } from 'react';
 import '../style.css';
-import GetTodayWeather from './getTodayWeather';
-import GetTodayTime from './getMaxMin';
 import GetForcast from './getForcast';
+import GetTodayTime from './getMaxMin';
+import GetTodayWeather from './getTodayWeather';
 import GetWeekWeather from './getWeekWeather';
 
 export default function GetApi(){
     
-    const API_KEY = '2de645da3d179f6103fa573ecaaf89dd'; // api key
+    const API_KEY = 1; // api key
 
     const [location, setLocation] = useState(''); 
     // Create function "setLocation" operated by variable "location" using "useState".  
@@ -34,7 +33,7 @@ export default function GetApi(){
 
         } catch (err){  // if there is any error,
 
-            alert(err);   
+            alert(err);
             // alert err. By doing this, The error does not appear when the value is not set at first time.
         }
 

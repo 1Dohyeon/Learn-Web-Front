@@ -10,13 +10,13 @@ function getTph(){
     var todayDate=startDate.split('-');
     var Date=todayDate[0]+todayDate[1]+todayDate[2];
     
-    var url ='https://www.khoa.go.kr/api/oceangrid/tideObsPreTab/search.do?ServiceKey=D1H8zV6S/gnXCwLS4/oSw==&ObsCode='+ dt +'&Date='+ Date +'&ResultType=json';
+    var url ='https://www.khoa.go.kr/api/oceangrid/tideObsPreTab/search.do?ServiceKey={}&ObsCode='+ dt +'&Date='+ Date +'&ResultType=json';
     
     // fetch()함수를 통해 url을 불러온다
     fetch(url)
     .then((response) => response.json())
-    .then((data) => { 
-        // Json data의 원하는 key만 불러오는데, ' '를 기준으로 분리하여 필요한 부분만 가져오고 html에 출력 
+    .then((data) => {
+        // Json data의 원하는 key만 불러오는데, ' '를 기준으로 분리하여 필요한 부분만 가져오고 html에 출력
         tph0=data.result.data[0].tph_time.split(' ')
         document.getElementById('t1').innerHTML = tph0[1] + ' ' +data.result.data[0].hl_code;
         tph1=data.result.data[1].tph_time.split(' ')

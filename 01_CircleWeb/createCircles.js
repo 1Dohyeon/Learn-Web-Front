@@ -1,12 +1,4 @@
-// createCircles.js
-const container = document.querySelector('.container');
-const smallCirclesGroup = document.querySelector('.small-circles');
-const bigCircleRadius = 800;    // 큰 원 반지름
-const smallCircleRadius = 150;  // 작은 원 반지름
-const smallCircleCount = 6;     // 원의 갯수
-const angleIncrement = (2 * Math.PI) / smallCircleCount;  // 원과 원 사이의 각도
-
-function createAboutMe() {
+/* function createAboutMe() {
   const aboutMeDiv = document.createElement('div');
   aboutMeDiv.style.backgroundColor = '#748c70';
   aboutMeDiv.style.width = '100vw';
@@ -39,8 +31,14 @@ function createAboutMe() {
   aboutMeDiv.appendChild(closeButton);
 
   document.body.appendChild(aboutMeDiv);
-}
-
+} */
+// createCircles.js
+const container = document.querySelector('.container');
+const smallCirclesGroup = document.querySelector('.small-circles');
+const bigCircleRadius = 800;    // 큰 원 반지름
+const smallCircleRadius = 150;  // 작은 원 반지름
+const smallCircleCount = 6;     // 원의 갯수
+const angleIncrement = (2 * Math.PI) / smallCircleCount;  // 원과 원 사이의 각도
 
 export function createCircles() {
     for (let i = 0; i < smallCircleCount; i++) {
