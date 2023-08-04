@@ -10,8 +10,12 @@ cos, sin 함수를 이용하여 원의 좌표를 지정하고, 좌표값을 변�
 ### <a href="https://github.com/1Dohyeon/Study-Web/tree/master/02_tide">02. tide</a>
 국립해양조사원 오픈 API를 이용하여 특정 지역의 고조와 저조 데이터를 가져옴.
 
-### <a href="https://github.com/1Dohyeon/Study-Web/tree/master/02_tide">03. weather</a>
+### <a href="https://github.com/1Dohyeon/Study-Web/tree/master/03_weather">03. weather</a>
+React를 이용하여 설계함.
+openweathermap의 오픈 API를 이용하여 날씨 데이터를 가져옴.
 
-### <a href="https://github.com/1Dohyeon/Study-Web/tree/master/02_tide">04. memo1</a>
-### <a href="https://github.com/1Dohyeon/Study-Web/tree/master/02_tide">05. memo2</a>
+### <a href="https://github.com/1Dohyeon/Study-Web/tree/master/04_memo1">04. memo1</a>
+간단한 메모장 기능을 설계함.
 
+### <a href="https://github.com/1Dohyeon/Study-Web/tree/master/05_memo2">05. memo2</a>
+React를 이용하여 간단한 메모장 기능을 설계함.
